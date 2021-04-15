@@ -8,21 +8,16 @@ a:link {
 }
 
 .container1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  position: fixed;
-  width: 100%;
-  right: 0;
-  top: 0;
 }
 
 .container2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: #3cdbc0;
   height: 100vh;
   margin-top: 104px;
@@ -48,6 +43,13 @@ a:link {
 .slogan {
   color: #ffffff;
   font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(50vh);
 }
 
 @media all and (min-width: 768px) {
