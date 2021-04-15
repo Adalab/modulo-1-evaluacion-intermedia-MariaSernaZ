@@ -4,6 +4,7 @@
 
 a:link {
   text-decoration: none;
+  color: #4a4a4a;
 }
 
 .container1 {
@@ -11,6 +12,10 @@ a:link {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  right: 0;
+  top: 0;
 }
 
 .container2 {
@@ -20,6 +25,7 @@ a:link {
   align-items: center;
   background-color: #3cdbc0;
   height: 100vh;
+  margin-top: 104px;
 }
 
 .logo {
@@ -37,7 +43,6 @@ a:link {
 .item {
   text-transform: uppercase;
   font-size: 16px;
-  word-spacing: 20px;
 }
 
 .slogan {
@@ -59,5 +64,9 @@ a:link {
 
   .menu {
     margin-right: 30px;
+  }
+
+  .slogan {
+    font-size: 40px;
   }
 }
