@@ -1,3 +1,4 @@
+/*es preferible usar :root para las fuentes*/
 * {
   font-family: "Rubik", sans-serif;
 }
@@ -15,8 +16,10 @@ a:link {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  background-color: #ffffff; /*se me ha olvidado poner color*/
 }
 
+/*si utilizamos word-spacing:100vw, forzaremos en a que cada palabra esté en una línea. En este caso, también tendríamos que alinearlo*/
 .container2 {
   background-color: #3cdbc0;
   height: 100vh;
@@ -27,6 +30,7 @@ a:link {
   margin-top: 10px;
 }
 
+/*enlaces son de tipo inline*/
 .menu {
   display: flex;
   flex-direction: row;
@@ -35,7 +39,10 @@ a:link {
   margin-bottom: 13px;
 }
 
-.item {
+/*para dar hueco a los enlaces, mejor usar padding*/
+.link {
+  display: block;
+  padding: 0 10px 13px 10px;
   text-transform: uppercase;
   font-size: 16px;
 }
