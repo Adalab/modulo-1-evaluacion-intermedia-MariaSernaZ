@@ -1,7 +1,24 @@
-body {
-  padding: 2rem;
+/*si utilizamos word-spacing:100vw, forzaremos en a que cada palabra esté en una línea. En este caso, también tendríamos que alinearlo*/
+.container2 {
+  background-color: #3cdbc0;
   height: 100vh;
-  background-image: url('../images/bg-adalab.png');
-  background-color: $color-bg;
-  font-family: $font-main;
+  margin-top: 104px;
+}
+
+.slogan {
+  color: #ffffff;
+  font-size: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(50vh);
+}
+
+@media all and (min-width: 768px) {
+  .slogan {
+    font-size: 40px;
+  }
 }

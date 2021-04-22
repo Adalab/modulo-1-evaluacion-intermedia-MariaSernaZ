@@ -1,5 +1,54 @@
-.page__header {
+a:link {
+  text-decoration: none;
+}
+
+.container1 {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+/*enlaces son de tipo inline*/
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 13px;
+}
+
+/*para dar hueco a los enlaces, mejor usar padding*/
+.link {
+  display: block;
+  padding: 10px 10px 10px 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #4a4a4a;
+  font-family: var(--fontfam);
+}
+
+@media all and (min-width: 768px) {
+  .container1 {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+
+  .menu {
+    margin-right: 30px;
+  }
 }
